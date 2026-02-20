@@ -1,0 +1,96 @@
+/* Navbar Container */
+.navbar {
+    BORDER-BOTTOM: 2PX SOLID;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+  position: sticky;
+  height: 50px;
+   background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("./\/images/messy\ dresses.jpg");
+  background-size: cover;        /* FULL stretch */
+  background-position: center;   /* center align */
+  background-repeat: no-repeat; 
+  
+  }
+
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: yellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 25px;  /* round corner */
+  
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+.search-bar button {
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
+/* Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 100px;
+  font-weight:bold;
+
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color:yellow;
+  font-size: 1.22rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #00adb5;
+}
+
+/* Button */
+.navbar-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #00adb5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #019ca3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-btn {
+    display: none;
+  }
+}
