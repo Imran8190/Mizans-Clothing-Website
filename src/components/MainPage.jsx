@@ -3,14 +3,14 @@ import "./MainPage.css";
 
 const MainPage = () => {
   return (
-    <div className="main">
+    <div id="MainPage"  className="main">
 
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
           <h1>Timeless Elegance</h1>
           <p>Discover the new luxury collection crafted for perfection.</p>
-          <button className="hero-btn">Explore Collection</button>
+          <button className="hero-btn" onClick={() => window.location.href="#Premium"}>Explore Collection</button>
         </div>
       </section>
 
@@ -19,21 +19,21 @@ const MainPage = () => {
         <h2>Featured Collection</h2>
         <div className="featured-grid">
           <div className="card">
-            <div className="card-img"></div>
+            <div className="card-img1"></div>
             <h3>Signature Blazer</h3>
-            <p>$249</p>
+             <button className="product-price">$499</button>
           </div>
 
           <div className="card">
-            <div className="card-img"></div>
+            <div className="card-img2"></div>
             <h3>Classic Leather Bag</h3>
-            <p>$399</p>
+             <button className="product-price">$499</button>
           </div>
 
           <div className="card">
-            <div className="card-img"></div>
+            <div className="card-img3"></div>
             <h3>Luxury Watch</h3>
-            <p>$599</p>
+             <button className="product-price">$499</button>
           </div>
         </div>
       </section>

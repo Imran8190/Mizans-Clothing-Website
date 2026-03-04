@@ -1,0 +1,142 @@
+.premium-collections {
+  padding: 100px 80px 0px;
+  border-bottom: 2px solid rgb(6, 6, 6);
+
+ 
+}
+
+.collection-section {
+  margin-bottom: 100px;
+  animation: fadeUp 1.2s ease forwards;
+  opacity: 0;
+
+}
+.collection-section  h2{
+  text-align: center;
+}
+
+.collection-section  p{
+  text-align: center;
+}
+
+.collection-heading {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.collection-sub {
+  color: #777;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Product Card */
+.product-card {
+  text-align: center;
+  
+}
+
+.collection-card {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+.product-name {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-price {
+  
+  font-weight: 500;
+  margin-top: 5px;
+  background-color: #fff8dc;
+  color: #342419;
+  border: 1px solid #d4b483;
+  border-radius: 10px;
+  width: 30%;
+
+}
+
+/* Images */
+.men1 { background-image: url("./images/shirt.jfif"); }
+.men2 { background-image: url("./images/pant.jfif"); }
+.men3 { background-image: url("./images/T-shirt.jfif"); }
+
+.women1 { background-image: url("./images/wdress1.jfif"); }
+.women2 { background-image: url("./images/wdress2.jfif"); }
+.women3 { background-image: url("./images/wdress3.jfif"); }
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.product-card {
+  flex: 0 0 33.3333%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  text-align: center;
+
+}
+
+.arrow {
+  background: #8B5E3C;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  background: #6d472d;
+}
+.men4 { background-image: url("./images/men1.jfif"); }
+.men5 { background-image: url("./images/men2.jfif"); }
+.men6 { background-image: url("./images/men3.jfif"); }
+.women4 { background-image: url("./images/wdress4.jfif"); }
+.women5 { background-image: url("./images/wdress5.jfif"); }
+.women6 { background-image: url("./images/wdress6.jfif"); }

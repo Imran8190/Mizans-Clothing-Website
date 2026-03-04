@@ -1,16 +1,20 @@
-import { useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import MainPage from "./components/MainPage";
-function App() {
-  const [cart] = useState(2); // sample cart count
+import Navbar from "../src/components/Navbar"
+import MainPage from "../src/components/MainPage";
+import Collections from "./components/PremiumCollections";
+import Contact from "../src/components/Contact";
+import Footer from "../src/components/Footer";
 
+const App = () => {
   return (
-    <>
-      <Navbar cartCount={cart} />
-      <MainPage />
+  <>
+  < Navbar/>
+  <MainPage/>
+  <Collections/>
+  <Contact/>
+  <Footer/>
     </>
   );
-}
+};
 
 export default App;
